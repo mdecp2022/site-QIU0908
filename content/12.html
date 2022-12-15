@@ -2,7 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W5.html'>W5</a><li><a href='W7.html'>W7</a><li class='has-children'><a href='W12.html'>W12</a><ul class='dropdown'><li><a href='W12-1.html'>W12-1</a></li></ul><li><a href='W13.html'>W13</a></li></ul><li><a href='cp2022.html'>cp2022</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W5.html'>W5</a><li><a href='W7.html'>W7</a><li class='has-children'><a href='12.html'>12</a><ul class='dropdown'><li><a href='1122.html'>1122</a></li></ul><li><a href='W13.html'>W13</a></li></ul><li><a href='cp2022.html'>cp2022</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,25 +141,30 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W12 << <a href='W12.html'>Previous</a> <a href='W13.html'>Next</a> >> W13<br /><h1>W12-1</h1>
-<!-- 
-在動態網站頁面中啟用 Brython 執行環境的用法, 請注意動態網站執行所在路徑
--->
-<script src="./../cmsimde/static/brython.js"></script>
-<script src="./../cmsimde/static/brython_stdlib.js"></script>
-<!-- 啟動 Brython -->
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','/downloads/py/']});
-}
-</script>
-<!-- 以下事先在頁面中加入 id="brython_div" 的 div 標註
-之後可利用 Brython 的 document 模組與此 html 標註對應
---></p>
-<!-- 利用 html 建立一個 id="btn1" 的按鈕 -->
-<p><button id="btn1">取使用者輸入</button></p>
-<p></p><br />W12 << <a href='W12.html'>Previous</a> <a href='W13.html'>Next</a> >> W13</div>
+    <div id="tipue_search_content">W7 << <a href='W7.html'>Previous</a> <a href='1122.html'>Next</a> >> 1122<br /><h1>12</h1>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/24919c07d0613b0878d340401cfa3e05/raw/cdb8a9c674eae2f7b9fda3627c364f4d554b56fc/w12_hw-1.py">hw第一個練習</a></p>
+<p></p>
+<div>
+<pre class="brush:py;auto-links:false;gutter:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))</pre>
+<p></p>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/24919c07d0613b0878d340401cfa3e05/raw/cdb8a9c674eae2f7b9fda3627c364f4d554b56fc/w12_hw-1.py">hw第二個練習</a></p>
+<pre class="brush:py;auto-links:false;gutter:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))
+# 到這裡已知利用 input() 函式將傳回字串, 接著以 float() 將字串轉為浮點數
+user_input_temp = float(user_input_temp)
+# 因為攝氏溫度乘上 9/5 之後再加上 32 就可以得到對應的華氏溫度值
+Fahrenheit = (user_input_temp*9/5) + 32
+# 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
+# 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
+print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
+<p></p>
+<pre>.<br/><br/><br/></pre>
+</div><br />W7 << <a href='W7.html'>Previous</a> <a href='1122.html'>Next</a> >> 1122</div>
         
     <!-- footer -->
       <div class="container">
