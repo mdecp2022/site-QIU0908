@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W10.html'>W10</a><li class='has-children'><a href='W12.html'>W12</a><ul class='dropdown'><li><a href='W12-1.html'>W12-1</a></li></ul><li><a href='W13.html'>W13</a></li></ul><li><a href='cp2022.html'>cp2022</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W10.html'>W10</a><li class='has-children'><a href='W12.html'>W12</a><ul class='dropdown'><li><a href='W12-1.html'>W12-1</a></li></ul><li><a href='W13.html'>W13</a><li><a href='W15.html'>W15</a></li></ul><li><a href='cp2022.html'>cp2022</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,7 +141,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W12-1 << <a href='W12-1.html'>Previous</a> <a href='cp2022.html'>Next</a> >> cp2022<br /><h1>W13</h1>
+    <div id="tipue_search_content">W12-1 << <a href='W12-1.html'>Previous</a> <a href='W15.html'>Next</a> >> W15<br /><h1>W13</h1>
 <p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/50718630c794abcd3136bd8fb8dc5e57fd20c68d/w13_temp_ex2.py"><strong>w13_ex2(攝氏轉華氏)</strong><br/></a></p>
 <pre><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
 <pre><span class="cm-line"><span class="cm-string"></span> </span><span class="cm-line"><span class="cm-string">f = c*9/5 + 32 </span><br/> </span><span class="cm-line"><span class="cm-string">c = (f-32)*5/9</span> <br/></span><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
@@ -150,31 +150,7 @@ img.add_border {
 <pre><span class="cm-line"><span class="cm-builtin"></span> </span><span class="cm-line"><span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-builtin">float</span>(<span class="cm-variable">c</span>) //<span class="cm-string">把c轉成浮點數</span><br/></span><span class="cm-line"><br/></span><span class="cm-line"><span class="cm-builtin">print</span>("你輸入的攝氏溫度"+str(c),"等於華氏溫度"+str((c*9/5+32)) //展示數值("文字"後 加上 使用STR()中函數後的字串,同左)</span></pre>
 <p><strong><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/245b6c741913f78eaabb26c3c892c4c985e3d2fc/w13_temp_ex3.py">w13 ex3(華式轉攝式)</a></strong></p>
 <p>與上面差f = c*9/5+32 ,c = (f-32)*5/9</p>
-<p></p>
-<p>
-<script type="text/python">
-from browser import html, document
-# Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-#user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-# 但是在頁面中 Brython 的 print() 將會顯示在 log 而非頁面
-#print(type(user_input_temp))
-# 這裡定義一個 brython_div 變數, 透過 document[] 與頁面中 id="brython_div" 的位置對應
-brython_div = document["brython_div"]
-# 看能不能直接將變數值字串列在標註 id 為 "brython_div" 的頁面位置
-#brython_div <= user_input_temp
-# 之後若要列出 html, 則需要透過 Brython 的 html 模組
-# 接下來要設法按下按鈕之後才執行取使用者 input 的流程
-# 首先 comment 掉前面的 input() 與 print(), 同時蓋掉輸出, 並利用事件導向設計一個函式
-def get_input(env):
-    user_input_temp = input("請輸入攝氏溫度值:")
-    brython_div <= user_input_temp
-# 透過 Brython browser 模組中的 document 物件將 id="btn1" 的物件中的 bind() 方法
-# 讓使用者 click 後會經由瀏覽器中的 event 通知執行 get_input 函式
-document["btn1"].bind('click', get_input)
-</script>
-</p>
-<br />W12-1 << <a href='W12-1.html'>Previous</a> <a href='cp2022.html'>Next</a> >> cp2022</div>
+<br />W12-1 << <a href='W12-1.html'>Previous</a> <a href='W15.html'>Next</a> >> W15</div>
         
     <!-- footer -->
       <div class="container">
