@@ -3,4 +3,332 @@
 <p></p>
 <p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a> as submodule</p>
 <h1>HW</h1>
+<h2>w5</h2>
+<div>
+<pre><span class="cm-line"><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/708ff2ad1780b92706f1cdfac6d0df8f/raw/fa6afeb199aaeac8a6f73836a2e77a114125a1ea/password_generator.py">W5亂數</a><br/>
+</span><span class="cm-line"><span class="cm-keyword">import</span> <span class="cm-variable">random (導入 亂數模組程式庫)</span></span><span class="cm-line">
+</span><span class="cm-line"><span class="cm-keyword">import</span> <span class="cm-variable">string (導入 字串模組程式庫)</span></span><span class="cm-line">
+</span><span class="cm-line"><span class="cm-keyword">def </span><span class="cm-def">password_generator</span>(<span class="cm-variable">size</span><span class="cm-operator">=</span><span class="cm-number">4</span>, <span class="cm-variable">chars</span><span class="cm-operator">=</span><span class="cm-variable">string</span>.<span class="cm-property">ascii_lowercase</span> <span class="cm-operator">+</span> <span class="cm-variable">string</span>.<span class="cm-property">digits</span>):<br/>(def 定義函數 名稱     (初始值4, 新字串=字串模組程式.英文小寫(屬性)+字串模組程式.數字串(屬性)))</span><span class="cm-line"> 
+</span><span class="cm-line">    <span class="cm-string">"""Generate random password (多行文字註解 生成隨機密碼)</span>
+</span><span class="cm-line"><span class="cm-string">    """</span></span><span class="cm-line">
+</span><span class="cm-line">    <span class="cm-keyword">return</span> <span class="cm-string">''</span>.<span class="cm-property">join</span>(<span class="cm-variable">random</span>.<span class="cm-property">choice</span>(<span class="cm-variable">chars</span>) <span class="cm-keyword">for</span> <span class="cm-variable">_</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-variable">size</span>))<br/>    (傳回  ''.<span>轉成新的字串(亂數模組程式庫.選擇(功能)(新字串) for迴圈 在 新字串 中選4次(初始值)))</span></span><span class="cm-line">
+</span><span class="cm-line"><span class="cm-variable">pass_string</span> <span class="cm-operator">=</span> <span class="cm-string">"abcdefghkmnpqrstuwxyz123456789"<br/></span>(設定 字串模組程式庫="字串")</span><span class="cm-line">
+</span><span class="cm-line"><span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-number">10</span>):<br/>(for迴圈 選(10)次)
+</span><span class="cm-line">    <span class="cm-builtin">print</span>(<span class="cm-variable">password_generator</span>(<span class="cm-number">4</span>, <span class="cm-variable">pass_string</span>))<br/>    (展示(password_generator(4個字符,字串模組程式庫中))</span></pre>
+</div>
+<h2>w6</h2>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/5895908660440fc834a9b434eeaa357d/raw/410f5e45fde28b8852652f9e3db1733cf8e7a7c5/w6-11">1a抽點</a></p>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/5895908660440fc834a9b434eeaa357d/raw/192b611a4e650c083395dfb2c5efa7a705869c9e/w6-12">1a擷取個人靜態網頁</a></p>
+<div><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/dc6fbf9e8b80b26b987ab23c82778665/raw/cfc75864fac490d248b9141c166b615533cba079/w6-1&amp;src2=https://gist.githubusercontent.com/QIU0908/dc6fbf9e8b80b26b987ab23c82778665/raw/4f3da70f3da7a1db0559071c26f9c0453cbb83fe/w6-2">1a抽點程式與擷取個人靜態網頁的程式結合</a></div>
+<p></p>
+<h2>w7</h2>
+<p><strong>在電腦教室改版</strong></p>
+<ol>
+<li>設定電腦輔助設計室專用 IPv6 網路協定環境設定</li>
+<li>啟動start_ipv6</li>
+<li>打開命令列輸入</li>
+<li> cd..  //退到上一個目錄</li>
+<li> cd ss // 移動到 ss 目錄</li>
+<li> 啟動 ipv6.reg //啟動key</li>
+<li>cms   //啟動ss目錄</li>
+<li>進入 https://localhost:9443</li>
+<li>進行改版</li>
+<li>改版完按 generate //動態網頁轉靜態網</li>
+<li>acp "檔名"//改版推到倉儲</li>
+</ol>
+<p><strong>在宿舍改版</strong></p>
+<ol>
+<li>啟動start_ipv4</li>
+<li>打開命令列輸入</li>
+<li> cd..  //退到上一個目錄</li>
+<li> cd ss // 移動到 ss 目錄</li>
+<li> 啟動 ipv4.reg //啟動key</li>
+<li>cms   //啟動ss目錄</li>
+<li>進入 https://localhost:9443</li>
+<li>進行改版</li>
+<li>改版完按 generate //動態網頁轉靜態網</li>
+<li>acp "檔名"//改版推到倉儲</li>
+</ol>
+<p>問題</p>
+<p>Q:每次更新都要git clone --recurse-submodules 檔名每次都改,有無其他方法?</p>
+<p>A:有 git pull</p>
+<p></p>
+<p><strong>感想</strong></p>
+<p>      兩者差異只在於ipv6網路協定的啟用,但在宿舍改版的先決條件是重設</p>
+<ol>
+<li>
+<h6>另做一份ipv4的啟動檔案不用設定 proxy</h6>
+</li>
+<li>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; text-align: left;">
+<h6>home_ipv4中的.gitconfig 不用設定</h6>
+<div>
+<h6>                [http]</h6>
+<h6>                 proxy = <a href="http://p42.cycu.org:3128" rel="noreferrer noopener" tabindex="-1" target="_blank" title="http://p42.cycu.org:3128/">http://p42.cycu.org:312</a></h6>
+<p>因為:github.com 網站<span>只支援 IPv4 連線的，所以</span>ipv4不需要對外連線的代理主機。</p>
+<p></p>
+<h2>w10</h2>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/1d785166e8eceac77590ea76a4ab1597/raw/4a6d7f6a1e40e3dc20ae4c743ac5f9646982f0cf/w10-2">W10 hw1</a></p>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/65b3c4041f53f55682f18165ec68205b/raw/1536487f1475b8231f30b34570177562633161ab/w10">w10 hw2</a></p>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; text-align: left;">for i in range(1, 10, 2): //<span>for i 迴圈 整數序列 (起始值, 終止值, 遞增(減)值)</span><br/> print(i, end=" ")      //<span>輸出 (印出 i 字串, 字串間用空格隔開)</span></div>
+<h2>w11</h2>
+<h3>hw1</h3>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/f7d01e07610b167840a6aacbf7ad32c3/raw/608968b0dfa363925d5e805999c2103fd617a925/w11">列出 w10 小考成績與缺考學號</a></div>
+<h2>w12</h2>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/24919c07d0613b0878d340401cfa3e05/raw/cdb8a9c674eae2f7b9fda3627c364f4d554b56fc/w12_hw-1.py">hw第一個練習</a></p>
+<p></p>
+<div>
+<pre class="brush:py;auto-links:false;gutter:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))</pre>
+<p></p>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/24919c07d0613b0878d340401cfa3e05/raw/cdb8a9c674eae2f7b9fda3627c364f4d554b56fc/w12_hw-1.py">hw第二個練習</a></p>
+<pre class="brush:py;auto-links:false;gutter:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))
+# 到這裡已知利用 input() 函式將傳回字串, 接著以 float() 將字串轉為浮點數
+user_input_temp = float(user_input_temp)
+# 因為攝氏溫度乘上 9/5 之後再加上 32 就可以得到對應的華氏溫度值
+Fahrenheit = (user_input_temp*9/5) + 32
+# 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
+# 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
+print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
+<p></p>
+<pre>.<br/><br/><br/></pre>
+</div>
+<h3>w12-1</h3>
+<p></p>
+<p></p>
+<p></p>
+<h2>w13</h2>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/50718630c794abcd3136bd8fb8dc5e57fd20c68d/w13_temp_ex2.py"><strong>w13_ex2(攝氏轉華氏)</strong><br/></a></p>
+<pre><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
+<pre><span class="cm-line"><span class="cm-string"></span> </span><span class="cm-line"><span class="cm-string">f = c*9/5 + 32 </span><br/> </span><span class="cm-line"><span class="cm-string">c = (f-32)*5/9</span> <br/></span><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
+<pre><span class="cm-line"><span class="cm-string"></span> </span><span class="cm-line"><span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-builtin">input //c=</span><span class="cm-string">輸入數值<br/></span></span></pre>
+<pre><span class="cm-line"><span class="cm-comment">#print(type(c)) </span>//</span><span class="cm-line">接著列出 c 變數的資料型別</span></pre>
+<pre><span class="cm-line"><span class="cm-builtin"></span> </span><span class="cm-line"><span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-builtin">float</span>(<span class="cm-variable">c</span>) //<span class="cm-string">把c轉成浮點數</span><br/></span><span class="cm-line"><br/></span><span class="cm-line"><span class="cm-builtin">print</span>("你輸入的攝氏溫度"+str(c),"等於華氏溫度"+str((c*9/5+32)) //展示數值("文字"後 加上 使用STR()中函數後的字串,同左)</span></pre>
+<p><strong><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/245b6c741913f78eaabb26c3c892c4c985e3d2fc/w13_temp_ex3.py">w13 ex3(華式轉攝式)</a></strong></p>
+<p>與上面差f = c*9/5+32 ,c = (f-32)*5/9</p>
+<h2>w14</h2>
+<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/b9655bed78ae55d339a796e77edc8a41/raw/c1dfff950d2ac041bcfb69ef625f78b55ad6df42/w14">w14缺考 成績</a></p>
+<p></p>
+<h2>w15</h2>
+<p></p>
+<p>Q:為何學習計算機程式需要建立個人倉儲?</p>
+<p>A:為了記錄每次更新改版。</p>
+<p>Q:全球資訊網能夠提供甚麼功能或有什麼優點?</p>
+<p>A:見面無距離，看書不用拿厚重的書。</p>
+<p>Q:Replit, stud.cycu.org 與 localhost 分別代表甚麼?</p>
+<p>A:Replit 公司用。</p>
+<p>   stud 學校用。</p>
+<p>   localhost 用github倉儲推上網頁轉靜態。</p>
+<p>Q:https, ssh 到底提供使用者那些功能或優點?</p>
+<p>A:提供加密傳輸，讓有心人士沒那麼容易重後台改版。</p>
+<p>Q:Brython 與 Python 有甚麼差別?</p>
+<p>A:Brython可以把程式丟進去執行</p>
+<p>   Python可以寫出程式(程式語言)</p>
+<p>Q:能夠直接在瀏覽器中以 Brython 繪製中華民國國旗, 或模擬綠色方塊在方塊格點中任意移動, 代表甚麼?</p>
+<p>A:代表python能做幾何運算</p>
+<p>Q:變數, 字串, 整數, 浮點數, 數列, Tuple, Dictionary, 函式, 重複迴圈, class, 物件導向, 資料庫, 這些名詞對您而言代表甚麼?</p>
+<p>A:代表又有新東西要學，但感覺跟數學的複合函數差不多。</p>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/4a00e6528fa25c1513ec073c70312781/raw/1f409332bd615b33a0da52af5299166b816ab250/w15" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://mde.tw/content/python.html?src=https://gist.githubusercontent.com/mdecycu/82d5d77b917a5d6c656233767afe4bea/raw/faa9d2c0f56d7ae4294969ecd5c3448aa5b8a85c/rect_walk.py">綠色方塊行走程式</a></div>
+<p></p>
+<p></p>
+<h1>cp2022</h1>
+<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
+<h4>Examples:</h4>
+<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
+<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/">https://www.geeksforgeeks.org/python-programming-examples/</a></p>
+<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples">https://www.programiz.com/python-programming/examples</a></p>
+<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/">https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/</a></p>
+<h4>Python Tutorial:</h4>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/introduction.html">An informal introduction to Python</a></p>
+<h4>Indentation</h4>
+<h4>Variables</h4>
+<h4>Comments</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#numbers">Numbers</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#strings">Strings</a></h4>
+<h4>print</h4>
+<p><a href="https://docs.python.org/3/tutorial/controlflow.html">Python control flow tools</a></p>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements">for</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements">if</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#the-range-function">range</a></h4>
+<h4>open</h4>
+<h4>read</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#lists">lists</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">tuples</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">dictionaries</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">functions</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/errors.html#exceptions">try ... except</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops">break</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements">pass</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes">classes</a></h4>
+<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
+<p><a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
+<p>亦即將所有對應的 html 也使用 Brython 產生, 然後寫為 <a href="https://docs.python.org/3/tutorial/classes.html">class</a> 後, 在範例導入時透過 <a href="https://docs.python.org/3/tutorial/classes.html#instance-objects">instance</a> 引用.</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 啟動 Brython --&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+&lt;/script&gt;</pre>
+<p>從 1 累加到 100:</p>
+<p></p>
+<p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div id="kw_editor1" style="width: 600px; height: 300px;"></div>
+<p></p>
+<p></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label></form>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<p></p>
+<div id="brython_div1"></div>
+<hr/>
+<p>從 1 累加到 100 part2:</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<p></p>
+<p></p>
+<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label></form>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
+<p></p>
+<div id="brython_div2"></div>
+<hr/>
+<h1>Brython</h1>
+<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
+<h4>Examples:</h4>
+<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
+<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/">https://www.geeksforgeeks.org/python-programming-examples/</a></p>
+<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples">https://www.programiz.com/python-programming/examples</a></p>
+<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/">https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/</a></p>
+<h4>Python Tutorial:</h4>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/introduction.html">An informal introduction to Python</a></p>
+<h4>Indentation</h4>
+<h4>Variables</h4>
+<h4>Comments</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#numbers">Numbers</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#strings">Strings</a></h4>
+<h4>print</h4>
+<p><a href="https://docs.python.org/3/tutorial/controlflow.html">Python control flow tools</a></p>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements">for</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements">if</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#the-range-function">range</a></h4>
+<h4>open</h4>
+<h4>read</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#lists">lists</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">tuples</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">dictionaries</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">functions</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/errors.html#exceptions">try ... except</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops">break</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements">pass</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes">classes</a></h4>
+<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
+<p><a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
+<p>亦即將所有對應的 html 也使用 Brython 產生, 然後寫為 <a href="https://docs.python.org/3/tutorial/classes.html">class</a> 後, 在範例導入時透過 <a href="https://docs.python.org/3/tutorial/classes.html#instance-objects">instance</a> 引用.</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 啟動 Brython --&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+&lt;/script&gt;</pre>
+<p>從 1 累加到 100:</p>
+<p></p>
+<p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div id="kw_editor1" style="width: 600px; height: 300px;"></div>
+<p></p>
+<p></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label></form>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<p></p>
+<div id="brython_div1"></div>
+<hr/>
+<p>從 1 累加到 100 part2:</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<p></p>
+<p></p>
+<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label></form>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div style="width: 100%; height: 100%;"></div>
+</div>
+</div>
+</li>
+</ol>
+<ol>
+<li>
+<div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; text-align: left;">
+<div>
+<p></p>
+<div id="brython_div2"></div>
+<hr/></div>
+</div>
+</li>
+</ol>
 <p></p>
