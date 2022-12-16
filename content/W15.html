@@ -162,29 +162,7 @@ img.add_border {
 <p>A:代表又有新東西要學，但感覺跟數學的複合函數差不多。</p>
 <div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/4a00e6528fa25c1513ec073c70312781/raw/1f409332bd615b33a0da52af5299166b816ab250/w15" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://mde.tw/content/python.html?src=https://gist.githubusercontent.com/mdecycu/82d5d77b917a5d6c656233767afe4bea/raw/faa9d2c0f56d7ae4294969ecd5c3448aa5b8a85c/rect_walk.py">綠色方塊行走程式</a></div>
 <p></p>
-<p>
-<script type="text/python">
-from browser import html, document
-# Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-#user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-# 但是在頁面中 Brython 的 print() 將會顯示在 log 而非頁面
-#print(type(user_input_temp))
-# 這裡定義一個 brython_div 變數, 透過 document[] 與頁面中 id="brython_div" 的位置對應
-brython_div = document["brython_div"]
-# 看能不能直接將變數值字串列在標註 id 為 "brython_div" 的頁面位置
-#brython_div <= user_input_temp
-# 之後若要列出 html, 則需要透過 Brython 的 html 模組
-# 接下來要設法按下按鈕之後才執行取使用者 input 的流程
-# 首先 comment 掉前面的 input() 與 print(), 同時蓋掉輸出, 並利用事件導向設計一個函式
-def get_input(env):
-    user_input_temp = input("請輸入攝氏溫度值:")
-    brython_div <= user_input_temp
-# 透過 Brython browser 模組中的 document 物件將 id="btn1" 的物件中的 bind() 方法
-# 讓使用者 click 後會經由瀏覽器中的 event 通知執行 get_input 函式
-document["btn1"].bind('click', get_input)
-</script>
-</p>
+<p></p>
 <br />w14 << <a href='w14.html'>Previous</a> <a href='cp2022.html'>Next</a> >> cp2022</div>
         
     <!-- footer -->
