@@ -197,20 +197,23 @@ length(5)</pre>
 print(keyword.kwlist)
 
 ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']</pre>
-<p style="text-align: left;"></p><h3>canvas</h3>
+<h3>canvas</h3>
 <!-- 納入 Brython 環境 -->
-<script src="/get_page/cmsimde/static/brython.js"></script>
-<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
 <!-- 啟動 Brython -->
 <p>
 <script>
 window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+brython({debug:1, pythonpath:['./static/','./../downloads/py/']});
 }
 </script>
 <!-- 給定 brython_div1 division 標註 --></p>
 <div id="brython_div1"></div>
 <!-- 加入啟動按鈕後的 Rect 行走程式原始碼 -->
+<p>
 <script type="text/python">
 # 這個程式用於 demo 綠色方塊沿著特定網格路徑行走
 # 從 Brython 程式庫中的 browser 模組導入 document 類別, 並以簡寫設定為 doc
@@ -221,6 +224,7 @@ from browser import html
 import browser.timer
 # 導入亂數模組
 from random import random, randint
+import math
 
 # 利用 html 建立一個 CANVAS 標註物件, 與變數 canvas 對應
 canvas = html.CANVAS(width = 600, height = 600)
@@ -392,11 +396,17 @@ h = int(canvas.height/hnum) - pixel
 origx = 1
 origy = 1
 # 利用 grid 函式畫出格線
-grid(origx, origy, w, h, wnum, hnum, pixel=1, color="black")
+#grid(origx, origy, w, h, wnum, hnum, pixel=1, color="black")
+#draw_line(0,0, 600, 600, )
+
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, -3/4* math.pi);
+ctx.stroke();
 
 doc["power"].bind("click", launchAnimation)
 #browser.timer.set_interval(game, 100)
-</script><h1>cp2022</h1>
+</script>
+</p><h1>cp2022</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>

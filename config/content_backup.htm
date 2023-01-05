@@ -137,13 +137,13 @@ print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit)
 <div style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Web', sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src=https://gist.githubusercontent.com/QIU0908/ca8e4a40d13c8fcfdc9db8478c5e2186/raw/3d6d90b0b0d25c05fb4289720473d34fd4ee0648/w15" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://mde.tw/content/python.html?src=https://gist.githubusercontent.com/mdecycu/82d5d77b917a5d6c656233767afe4bea/raw/faa9d2c0f56d7ae4294969ecd5c3448aa5b8a85c/rect_walk.py">綠色方塊行走程式</a></div>
 <h2>w17</h2>
 <h5>1.</h5>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0   #初始數值 = 0 只展示 for 迴圈 可不打 因為沒用到
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sum = 0   #初始數值 = 0 只展示 for 迴圈 可不打 因為沒用到
 for i in range(1,6,1): #for i 迴圈 範圍(起始,終使值,增量)   注意1. for迴圈最後是" : " 2.要包含終使值要+1
    print(i) #展示 i 數列 要記得縮排,電腦才知道是要展示for中的內容</pre>
 <p>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
 <h5>2.每次 <span>起始</span> <span>終使值 要變動都要去range中去改有點麻煩</span></h5>
 <p><span></span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sum = 0
 
 start = 1 #定義start 數值
 
@@ -155,7 +155,7 @@ for i in range(start,end+1,1):  #所以把終使值用end  起始值用start 
 <p><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
 <h5><span>3.把 i 數列改成級數</span></h5>
 <p></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sum = 0
 
 start = 1 
 
@@ -171,7 +171,7 @@ print ("由" + str(start)  + "加到" + str(end) + "等於" + str(sum)) </pre>
 <p><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
 <h5>4.把程式改成函式</h5>
 <p style="text-align: left;"></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">def sg(start=1, end=55): #定義函式 名稱為sg (初始數值)   注意最後是有" : " 
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def sg(start=1, end=55): #定義函式 名稱為sg (初始數值)   注意最後是有" : " 
           sum = 0
           #start = 1 #因為會被sg的數值相干擾所以註解掉
           #end = 445
@@ -185,7 +185,7 @@ sg() #把sg數值帶回函式
 sg(23,44) #sg新數值帶回函式</pre>
 <p style="text-align: left;"><span><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</span></p>
 <h5 style="text-align: left;"><span>5.練習公分轉英吋</span></h5>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">def length(inch=1):
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def length(inch=1):
  cm = inch * 2.54
 
  print (cm)
@@ -197,20 +197,23 @@ length(5)</pre>
 print(keyword.kwlist)
 
 ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']</pre>
-<p style="text-align: left;"></p><h3>canvas</h3>
+<h3>canvas</h3>
 <!-- 納入 Brython 環境 -->
-<script src="/get_page/cmsimde/static/brython.js"></script>
-<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
 <!-- 啟動 Brython -->
 <p>
 <script>
 window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+brython({debug:1, pythonpath:['./static/','./../downloads/py/']});
 }
 </script>
 <!-- 給定 brython_div1 division 標註 --></p>
 <div id="brython_div1"></div>
 <!-- 加入啟動按鈕後的 Rect 行走程式原始碼 -->
+<p>
 <script type="text/python">
 # 這個程式用於 demo 綠色方塊沿著特定網格路徑行走
 # 從 Brython 程式庫中的 browser 模組導入 document 類別, 並以簡寫設定為 doc
@@ -221,6 +224,7 @@ from browser import html
 import browser.timer
 # 導入亂數模組
 from random import random, randint
+import math
 
 # 利用 html 建立一個 CANVAS 標註物件, 與變數 canvas 對應
 canvas = html.CANVAS(width = 600, height = 600)
@@ -392,11 +396,17 @@ h = int(canvas.height/hnum) - pixel
 origx = 1
 origy = 1
 # 利用 grid 函式畫出格線
-grid(origx, origy, w, h, wnum, hnum, pixel=1, color="black")
+#grid(origx, origy, w, h, wnum, hnum, pixel=1, color="black")
+#draw_line(0,0, 600, 600, )
+
+ctx.beginPath();
+ctx.arc(100, 75, 50, 0, 3/4* math.pi);
+ctx.stroke();
 
 doc["power"].bind("click", launchAnimation)
 #browser.timer.set_interval(game, 100)
-</script><h1>cp2022</h1>
+</script>
+</p><h1>cp2022</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
