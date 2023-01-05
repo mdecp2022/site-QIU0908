@@ -141,16 +141,63 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w12-1 << <a href='w12-1.html'>Previous</a> <a href='w14.html'>Next</a> >> w14<br /><h1>w13</h1>
-<p><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/50718630c794abcd3136bd8fb8dc5e57fd20c68d/w13_temp_ex2.py"><strong>w13_ex2(攝氏轉華氏)</strong><br/></a></p>
-<pre><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
-<pre><span class="cm-line"><span class="cm-string"></span> </span><span class="cm-line"><span class="cm-string">f = c*9/5 + 32 </span><br/> </span><span class="cm-line"><span class="cm-string">c = (f-32)*5/9</span> <br/></span><span class="cm-line"><span class="cm-string">''' //多行文字註解</span></span></pre>
-<pre><span class="cm-line"><span class="cm-string"></span> </span><span class="cm-line"><span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-builtin">input //c=</span><span class="cm-string">輸入數值<br/></span></span></pre>
-<pre><span class="cm-line"><span class="cm-comment">#print(type(c)) </span>//</span><span class="cm-line">接著列出 c 變數的資料型別</span></pre>
-<pre><span class="cm-line"><span class="cm-builtin"></span> </span><span class="cm-line"><span class="cm-variable">c</span> <span class="cm-operator">=</span> <span class="cm-builtin">float</span>(<span class="cm-variable">c</span>) //<span class="cm-string">把c轉成浮點數</span><br/></span><span class="cm-line"><br/></span><span class="cm-line"><span class="cm-builtin">print</span>("你輸入的攝氏溫度"+str(c),"等於華氏溫度"+str((c*9/5+32)) //展示數值("文字"後 加上 使用STR()中函數後的字串,同左)</span></pre>
-<p><strong><a href="https://mdecp2022.github.io/site-QIU0908/content/Brython.html?src2=https://gist.githubusercontent.com/QIU0908/835b6a7e7cef3485268f53071525bf3f/raw/245b6c741913f78eaabb26c3c892c4c985e3d2fc/w13_temp_ex3.py">w13 ex3(華式轉攝式)</a></strong></p>
-<p>與上面差f = c*9/5+32 ,c = (f-32)*5/9</p>
-<br />w12-1 << <a href='w12-1.html'>Previous</a> <a href='w14.html'>Next</a> >> w14</div>
+    <div id="tipue_search_content">w15 << <a href='w15.html'>Previous</a> <a href='canvas.html'>Next</a> >> canvas<br /><h1>w17</h1>
+<p>1.</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0   #初始數值 = 0 只展示 for 迴圈 可不打 因為沒用到
+for i in range(1,6,1): #for i 迴圈 範圍(起始,終使值,增量)   注意1. for迴圈最後是" : " 2.要包含終使值要+1
+   print(i) #展示 i 數列 要記得縮排,電腦才知道是要展示for中的內容</pre>
+<p>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
+<p>2.每次 <span>起始</span> <span>終使值 要變動都要去range中去改有點麻煩</span></p>
+<p><span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0
+
+start = 1 #定義start 數值
+
+end = 445 #定義end 數值
+
+for i in range(start,end+1,1):  #所以把終使值用end  起始值用start 代替
+
+   print(i)</pre>
+<p><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
+<p><span>3.把 i 數列改成級數</span></p>
+<p></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sum = 0
+
+start = 1 
+
+end = 445
+
+for i in range(start,end+1,1):
+
+  sum = sum + i #程式跑第一次sum的左值=0 ,右值=0+1 程式跑第二次sum的左值=1 ,右值=1+2
+
+  #print(i) #因為程式會先讀到這行,但是要的是級數和所以要註解掉
+
+print ("由" + str(start)  + "加到" + str(end) + "等於" + str(sum)) </pre>
+<p><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
+<p>4.把程式改成函式</p>
+<p style="text-align: left;"></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">def sg(start=1, end=55): #定義函式 名稱為sg (初始數值)   注意最後是有" : " 
+          sum = 0
+          #start = 1 #因為會被sg的數值相干擾所以註解掉
+          #end = 445
+          for i in range(start,end+1,1):
+             sum = sum + i 
+             #print(i) 
+          print ("由" + str(start) + "加到" + str(end) + "等於" + str(sum))
+
+sg() #把sg數值帶回函式
+
+sg(23,44) #sg新數值帶回函式</pre>
+<p style="text-align: left;"><span><br/>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</span></p>
+<p style="text-align: left;"><span>5.練習公分轉英吋</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">def length(inch=1):
+ cm = inch * 2.54
+
+ print (cm)
+
+length(5)</pre>
+<p style="text-align: left;"></p><br />w15 << <a href='w15.html'>Previous</a> <a href='canvas.html'>Next</a> >> canvas</div>
         
     <!-- footer -->
       <div class="container">
